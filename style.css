@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: rgb(52, 121, 250);
+    font-weight: 400;
+    font-size: larger;
+    height: 50vh;
+    width: 30vh;
+}
