@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -8,7 +18,6 @@ body {
 }
 
 .header {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -20,7 +29,6 @@ body {
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
-    
 }
 
 .leftheader {
@@ -49,13 +57,16 @@ a {
 .box1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    box-sizing: border-box;
     padding-left: 100px;
     padding-top: 26px;
     padding-right: 100px;
-    background-color: whitesmoke;
+    padding-bottom: 26px;
+    background-color: rgba(62, 70, 71, 0.479);
+    border: 2px solid rgba(115, 115, 210, 0.626);
 }
+
 img {
     display: block;
     border-radius: 8px;
@@ -68,16 +79,32 @@ img {
     flex-direction: column;
     max-width: 22%;
     align-items: center;
-    background-color: aliceblue;
-    border: 2px solid rgb(226, 222, 222);
+    background-color: rgba(127, 255, 212, 0.474);
+    border: 2px solid rgba(115, 115, 210, 0.626);
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
 }
 
 .box2 {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
     background-color: aquamarine;
+    border: 2px solid rgba(115, 115, 210, 0.626);
+    align-items: center;
+}
+
+.minibox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .box3 {
     background-color: bisque;
+    border: 2px solid rgba(115, 115, 210, 0.626);
 }
 
 .box4 {
@@ -87,6 +114,7 @@ img {
     align-items: center;
     width: 100%;
     height: 30%;
+    border: 2px solid rgba(115, 115, 210, 0.626);
 }
 
 .mini3 {
@@ -96,10 +124,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid rgba(115, 115, 210, 0.626);
 
 
 
 }
+
 .footer {
     background-color: rgba(43, 48, 49, 0.479);
     font-weight: 400;
@@ -110,5 +140,5 @@ img {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 54px;  
+    height: 54px;
 }
